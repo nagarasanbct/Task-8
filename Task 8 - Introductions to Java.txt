@@ -1,0 +1,357 @@
+Task 8 - Introductions to Java										Task 1 : Introdcutions of java
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1)
+
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc = new Scanner(System.in);
+	        int a = sc.nextInt();
+	        int b = sc.nextInt();
+	        int c = sc.nextInt();
+	        int d = sc.nextInt();
+	        int sum1 = a+b;
+	        int sum2 = c+d;
+	        System.out.println(sum1);
+	        System.out.println(sum2);
+	        if (sum1 > sum2)
+	        {
+	        System.out.println("Sum of a and b is greater than the sum of c and d");
+	        
+	        }
+	    
+	    }
+	    
+	
+	}
+Input:
+
+5
+7
+1
+8
+
+Output:
+
+12
+9
+Sum of a and b is greater than the sum of c and d
+
+2)
+
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc = new Scanner(System.in);
+	        int num = sc.nextInt();
+	        System.out.println("Enter a Number: " +num);
+	        if (num % 2 == 0 )
+	        {
+	        System.out.println(num + " is even");
+	        
+	        }
+	    
+	    }
+	    
+	
+	}
+
+Input:
+
+26
+Enter a Number: 26
+
+Output:
+
+26 is even
+
+3)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc = new Scanner(System.in);
+		 char ch, strChar;
+			
+		 System.out.print("Enter the Character =  ");
+		 strChar = sc.next().charAt(0);
+			
+		 for(ch = strChar; ch <= 'Z'; ch++) {
+		  System.out.print(ch + " ");
+	     
+	    }
+	}
+}
+
+
+Input:
+
+Enter the Character =  A
+
+Output:
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+
+4)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   int t;
+	       Scanner sc = new Scanner(System.in);  
+	       int x = sc.nextInt();  
+	       int y = sc.nextInt();   
+	       System.out.println("before swapping numbers: "+x +"  "+ y);  
+	       t = x;  
+	       x = y;  
+	       y = t;  
+	       System.out.println("After swapping: "+x +"   " + y);  
+	    }    
+	}  
+	
+
+Input:
+
+10
+20
+
+Output:
+
+before swapping numbers: 10  20
+After swapping: 20   10
+
+5)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int temp;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num=scan.nextInt();
+		for(int i=2;i<=num/2;i++)
+		{
+	           temp=num%i;
+		   if(temp==0)
+		   {
+			   System.out.println(num + " is a Prime Number");
+			   break;
+		   }
+		}
+	}
+}
+
+
+Input:
+
+Enter the number:
+42
+
+Output:
+
+42 is a Prime Number
+
+6)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num=sc.nextInt();
+        int factorial=1;
+        for(int i=1;i<=num;i++)
+        {
+        	factorial=factorial*i;
+        }
+        System.out.println("Factorial of the number: "+factorial); 
+     }  
+}
+
+
+Input:
+
+5
+
+Output:
+
+Factorial of the number: 120
+
+7)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String name="Guvi Geek";
+        System.out.println("Enter the String: "+name);
+        int value = name.length();
+        
+        System.out.println("Lengh of String is: "+value); 
+     }  
+}
+
+
+Input:
+
+Enter the String: Guvi Geek
+
+Output:
+
+Lengh of String is: 9
+
+8)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String s="Welcome to Guvi";
+        for (int i=0; i<10; i++) {
+       
+        	System.out.println(s); 
+       
+        }
+        
+     }  
+}
+
+Output:
+
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+
+9)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner (System.in);
+		
+		int Person_age=sc.nextInt();
+
+		System.out.println("The age of Person is: "+Person_age);
+
+		if(Person_age>=60)
+
+		{
+
+		System.out.println("Person is senior citizen");
+
+		}
+
+		else{
+
+		System.out.println("Person is not senior citizens");
+
+		}
+
+		}
+
+		}
+Input 1:
+
+58
+The age of Person is: 58
+
+Output 1:
+
+Person is not a senior citizen
+
+Input 2:
+
+60
+The age of Person is: 60
+
+Output 2:
+
+Person is a senior citizen
+
+10)
+
+package javabasic;
+
+import java.util.Scanner;
+
+public class JavaTask1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner (System.in);
+		 System.out.println("Enter a number:");
+		  int value = 0;
+	      int num = sc.nextInt();
+	      while(num!=0){
+	         num = num/10;
+	         value++;
+	      }
+	      System.out.println("Number of digits in the integer is : "+value);
+	   }
+	}
+
+Input:
+
+Enter a number:
+42657
+
+Output:
+
+Number of digits in the integer is : 5
